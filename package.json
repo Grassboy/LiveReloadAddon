@@ -1,9 +1,35 @@
 {
-  "name": "livereload",
-  "fullName": "LiveReload",
-  "id": "jid1-hOL4G27XebSgtA",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
-  "version": "0.1"
+    "name": "livereload",
+    "fullName": "Grassboy LiveReload",
+    "id": "jid1-hOL4G27XebSgtA",
+    "description": "一個簡單的 Live Reload Client",
+    "author": "Grassboy@plurk.com",
+    "license": "MIT License",
+    "version": "0.2",
+	"contributors": ["Resource: http://compass.handlino.com/doc/getting_started_with_compassapp-tw.html#services"],
+	"preferences": [{
+		"name": "enabled",
+		"title": "是否預設啟用？",
+		"description": "如果預設啟用，則您的瀏覽器將會自動連上 LiveReload Server",
+		"type": "bool",
+		"value": false
+	},{
+		"name": "modPatten",
+		"title": "要掛載 LiveReload 的頁面 URL 格式",
+		"description": "您可以限定某些網址下才要掛載 LiveReload，您也可以用「*」 來指定所有頁面都要掛載 LiveReload",
+		"type": "string",
+		"value": "*"
+	},{
+		"name": "host",
+		"title": "LiveReload Server 位置",
+		"description": "您要對哪個 Server 進行 LiveReload?",
+		"type": "string",
+		"value": "localhost"
+	},{
+		"name": "port",
+		"title": "LiveReload Server Port",
+		"description": "您要連上該 Server 的哪個 Port 進行 LiveReload?",
+		"type": "integer",
+		"value": 35729
+	}]
 }
